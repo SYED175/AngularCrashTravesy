@@ -1,0 +1,5 @@
+<div [ngClass]="{reminder:task.reminder}" class="task tasker" (dblclick)="onToggleG(task)">
+    <h3>{{task.text}} <fa-icon  [ngStyle]="{'color':'red'}" [icon]="faMizzu" (click)="Delete(task)"  ></fa-icon></h3> <!-- this fa-icon creates icon in this case "x"-->
+    <p>{{task.day}}</p>
+ </div> 
+ <!-- The ngClass directive allows you to dynamically set CSS classes on an HTML element  -->
